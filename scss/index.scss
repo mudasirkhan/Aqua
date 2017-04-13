@@ -1,24 +1,22 @@
-
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-body{
+body {
 
-   background-color: $silver;
+    background-color: $silver;
     color: white;
     font-family: 'Lato';
 }
 
-header{
+header {
     width: 100%;
     background-image: url("../img/top-bg.png");
     background-size: 104%;
     background-position-x: -23px;
-    .wrapper{
+    .wrapper {
         padding-top: 4em;
     }
 }
-
 
 .wrapper {
 
@@ -33,7 +31,6 @@ header{
     justify-content: space-between;
     align-items: center;
 
-
     > * {
         color: white;
         display: inline-block;
@@ -46,70 +43,79 @@ header{
         flex: .55;
         justify-content: flex-end;
         display: flex;
-        ul{
+        ul {
             margin: 0px;
-            li{
+            li {
                 display: inline-block;
-            a{
-                padding: .25rem 1rem;
-                text-decoration: none;
-                color: white;
+                a {
+                    padding: .25rem 1rem;
+                    text-decoration: none;
+                    color: white;
+                }
             }
-            }
-    }
+        }
     }
 }
-.img-wrapper{
+
+.img-wrapper {
     background: url("../img/pharma_bg.png") no-repeat;
     background-position-x: 75%;
     background-position-y: 0%;
 
-
     //background-origin: ;
 
-
 }
-.slider{
+
+.slider {
     display: flex;
-    flex:1 ;
+    flex: 1;
     justify-content: flex-start;
     align-items: center;
     height: 35vh;
 
-    .slide{
+
+
+    .slide {
         flex: .3;
-        *{
+
+        span {
+            font-family: 'Lato-Light';
+        }
+        > * {
             margin-top: 1rem;
         }
-        .button{
+        .button {
             background-color: white;
             color: $blue;
             border-radius: 40px;
             width: 40%;
             text-align: center;
             padding: .5rem;
-            box-shadow: 1px 1px 1px 1px rgba(black, .16) ;
+            box-shadow: 1px 1px 1px 1px rgba(black, .16);
         }
     }
-    .image{
+    .image {
         flex: .3;
     }
 }
-.services-container{
+
+.services-container {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: $green;
-    border-radius:6px;
+    border-radius: 6px;
     padding: 1rem;
 }
-.text{
+
+.text {
     flex: .2;
 
 }
-.services{
+
+.services {
     width: 100%;
     flex: .8;
     display: flex;
@@ -117,24 +123,27 @@ header{
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    .items{
+    .items {
         width: 20%;
         text-align: center;
 
-        h4{
+        h4 {
             padding: .3em 0;
             margin: 0 0;
-            & + span{
-                font-size: 12px;line-height: 13px;
+            & + span {
+                font-size: 12px;
+                line-height: 13px;
             }
         }
 
     }
 }
-.contact{
+
+.contact {
     background-color: $silver;
 }
-.contact-form{
+
+.contact-form {
     padding-top: 2em;
     display: flex;
     flex-direction: column;
@@ -145,20 +154,20 @@ header{
     max-width: 400px;
     margin: 0 auto;
 
-    & select , input , textarea{
+    & select, input, textarea {
         background-color: white;
         color: $blue;
         width: 400px !important;
-        border:none;
+        border: none;
         border-radius: 4px;
         padding: 1em 2em;
         font-size: 18px;
-        box-shadow: 1px 1px 19px 1px rgba($blue,.2);
+        box-shadow: 1px 1px 19px 1px rgba($blue, .2);
         margin-bottom: 2em;
         outline: none;
         box-sizing: border-box;
     }
-    textarea{
+    textarea {
         height: 400px;
         resize: none;
         align-content: flex-start;
@@ -166,7 +175,7 @@ header{
         vertical-align: top;
         padding: .2em .2em !important;
     }
-    .button{
+    .button {
         background-color: $blue;
         color: $silver;
         border-radius: 4px;
@@ -176,49 +185,47 @@ header{
     }
 
 }
+
 .footer {
-    background-image:url("../img/footer-bg.png");
+    background-image: url("../img/footer-bg.png");
     background-size: 110%;
     background-position-x: -52px;
 
     color: darkgray;
     font-size: 14px;
-    padding-top: 12em ;
+    padding-top: 12em;
 
     .footer-links {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-    & a{
-        color:darkgray;
+    & a {
+        color: darkgray;
     }
-    .footer-link1  {
-        flex:.33;
-        .button{
+    .footer-link1 {
+        flex: .33;
+        .button {
             margin-top: 2em;
             color: $blue;
             border: white 1px solid;
             border-radius: 20px;
             padding: .5em 1em;
             width: 60%;
-            box-shadow: 0px 0px 4px 4px rgba($silver,.4);
+            box-shadow: 0px 0px 4px 4px rgba($silver, .4);
         }
 
     }
-    .footer-link2  {
-        flex:.33;
+    .footer-link2 {
+        flex: .33;
 
-        ul{
+        ul {
             padding: 0px;
         }
-
-        a{
+        a {
             text-decoration: none;
-
-
         }
-        li{
+        li {
             list-style: none;
             padding: 0.5em 0em;
             display: inline-block;
@@ -228,16 +235,17 @@ header{
     .footer-link3 {
         flex: .33;
     }
-    h3{
+    h3 {
         color: $blue;
     }
 }
-.foot-note{
+
+.foot-note {
     margin-top: 2em;
     text-align: center;
-    padding-bottom:.5em;
+    padding-bottom: .5em;
 
-    span{
+    span {
         color: #e8544a;
     }
 }
