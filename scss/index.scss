@@ -1,13 +1,19 @@
+
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body{
 
-    background-color: $blue;
+   background-color: $silver;
     color: white;
+    font-family: 'Lato';
 }
 
 header{
     width: 100%;
-
+    background-image: url("../img/top-bg.png");
+    background-size: 104%;
+    background-position-x: -23px;
     .wrapper{
         padding-top: 4em;
     }
@@ -16,7 +22,7 @@ header{
 
 .wrapper {
 
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -53,6 +59,16 @@ header{
     }
     }
 }
+.img-wrapper{
+    background: url("../img/pharma_bg.png") no-repeat;
+    background-position-x: 75%;
+    background-position-y: 0%;
+
+
+    //background-origin: ;
+
+
+}
 .slider{
     display: flex;
     flex:1 ;
@@ -72,7 +88,7 @@ header{
             width: 40%;
             text-align: center;
             padding: .5rem;
-
+            box-shadow: 1px 1px 1px 1px rgba(black, .16) ;
         }
     }
     .image{
@@ -119,11 +135,11 @@ header{
     background-color: $silver;
 }
 .contact-form{
-    padding-top: 25em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     min-height: 400px;
     width: 400px;
     max-width: 400px;
@@ -145,6 +161,10 @@ header{
     textarea{
         height: 400px;
         resize: none;
+        align-content: flex-start;
+        text-align: left !important;
+        vertical-align: top;
+        padding: .2em .2em !important;
     }
     .button{
         background-color: $blue;
@@ -157,10 +177,14 @@ header{
 
 }
 .footer {
-    background-color: white;
+    background-image:url("../img/footer-bg.png");
+    background-size: 110%;
+    background-position-x: -52px;
+
     color: darkgray;
     font-size: 14px;
-    padding-top: 4em ;
+    padding-top: 12em ;
+
     .footer-links {
         display: flex;
         justify-content: space-between;
@@ -212,6 +236,7 @@ header{
     margin-top: 2em;
     text-align: center;
     padding-bottom:.5em;
+
     span{
         color: #e8544a;
     }

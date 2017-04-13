@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 body {
-  background-color: #009ce1;
-  color: white; }
+  background-color: #f4fcff;
+  color: white;
+  font-family: 'Lato'; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  background-image: url("../img/top-bg.png");
+  background-size: 104%;
+  background-position-x: -23px; }
   header .wrapper {
     padding-top: 4em; }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .content {
@@ -34,6 +39,11 @@ header {
           text-decoration: none;
           color: white; }
 
+.img-wrapper {
+  background: url("../img/pharma_bg.png") no-repeat;
+  background-position-x: 75%;
+  background-position-y: 0%; }
+
 .slider {
   display: flex;
   flex: 1;
@@ -50,7 +60,8 @@ header {
       border-radius: 40px;
       width: 40%;
       text-align: center;
-      padding: .5rem; }
+      padding: .5rem;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16); }
   .slider .image {
     flex: .3; }
 
@@ -89,11 +100,11 @@ header {
   background-color: #f4fcff; }
 
 .contact-form {
-  padding-top: 25em;
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   min-height: 400px;
   width: 400px;
   max-width: 400px;
@@ -112,7 +123,11 @@ header {
     box-sizing: border-box; }
   .contact-form textarea {
     height: 400px;
-    resize: none; }
+    resize: none;
+    align-content: flex-start;
+    text-align: left !important;
+    vertical-align: top;
+    padding: .2em .2em !important; }
   .contact-form .button {
     background-color: #009ce1;
     color: #f4fcff;
@@ -121,10 +136,12 @@ header {
     padding: .5rem; }
 
 .footer {
-  background-color: white;
+  background-image: url("../img/footer-bg.png");
+  background-size: 110%;
+  background-position-x: -52px;
   color: darkgray;
   font-size: 14px;
-  padding-top: 4em; }
+  padding-top: 12em; }
   .footer .footer-links {
     display: flex;
     justify-content: space-between;
