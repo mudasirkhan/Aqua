@@ -135,8 +135,8 @@
                             <option>Option</option>
                             <option>Option</option>
                         </select>
-                        <input type="text" placeholder="What would you like to know?"/>
-                        <textarea placeholder="A bit more in detail... Would you?"></textarea>
+                        <input type="text" name="name" id="name" placeholder="What would you like to know?"/>
+                        <textarea name="email" id="email" placeholder="A bit more in detail... Would you?"></textarea>
                         <input type="submit" value="Here you go" class="button" />
                         </form>
                     </div>
@@ -192,11 +192,12 @@
 
         <?php
          $name=$_POST['name'];
-            $email=$_POST['email'];
-            $message=$_POST['message'];
+         $email=$_POST['email'];
+
+     //       $message=$_POST['message'];
 	        $from="From: $name<$email>\r\nReturn-path: $email";
 
-            mail("info@pelhamfamilyreunion.com", $name, $message, $from);
+            mail("info@aquagroup.me", $name, $message, $from);
 
 
         //echo "Email sent!";
