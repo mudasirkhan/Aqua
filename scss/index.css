@@ -57,16 +57,24 @@ header .wrapper {
     display: inline-block;
 }
 
-.content .menu ul li a {
-    padding: .25rem 1rem;
+.content .menu > ul > li > a {
+    padding: .25rem 2rem;
     text-decoration: none;
     color: white;
+}
+.content .menu ul li:last-child a {
+    padding-right: 0;
+}
+
+.menu .sub-menu li {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .img-wrapper {
     background: url("../img/pharma_bg.png") no-repeat;
     background-position-x: 80%;
-    background-position-y: 15%;
+    background-position-y: 10%;
     transition: all 2s;
     -webkit-transition:all 2s;
 }
@@ -90,7 +98,7 @@ header .wrapper {
 .img-wrapper2 {
     background: url("../img/motor_bg.png") no-repeat;
     background-position-x: 80%;
-    background-position-y: 15%;
+    background-position-y: 10%;
     transition: all 2s;
     -webkit-transition:all 2s ;
 
@@ -98,25 +106,23 @@ header .wrapper {
 .img-wrapper3 {
     background: url("../img/pharma_bg.png") no-repeat;
     background-position-x: 80%;
-    background-position-y: 15%;
+    background-position-y: 10%;
     transition: all 2s;
     -webkit-transition:all 2s ;
 
 }
 
 .slider {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 35vh;
+    display: block;
+    position: relative;
+    margin:2em 0 1.5em 0;
 }
 
 
 .slider .slide {
-    flex: .7;
+
     margin-top: 0em;
-    background-color: #009ce1;
+    left: 0;
     border-radius: 4px ;
     padding: 0em 1em;
     /*transform: translateX(0);*/
@@ -129,6 +135,7 @@ header .wrapper {
 .slider .slide p {
     font-family: 'OpenSans-Light';
     font-size: 14px;
+    line-height: 19px;
     margin-bottom: 0;
 }
 
@@ -156,11 +163,12 @@ header .wrapper {
 .slider .image {
     flex: .3;
 }
-.slider .slider-dots-wrap {
+.slider-dots-wrap {
     justify-content: space-around;
-    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: .25em;
 }
-.slider .slider-dots-wrap span {
+.slider-dots-wrap span {
     width: 10px;
     height: 10px;
     margin-left: 11px;
@@ -170,7 +178,7 @@ header .wrapper {
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
     border-radius: 5px;
 }
-.slider .slider-dots-wrap span.active-dot {
+.slider-dots-wrap span.active-dot {
     background-color: #fff;
 }
 .services-container {
@@ -227,7 +235,7 @@ header .wrapper {
 
 .contact {
     background-color: #f4fcff;
-    padding-top: 6em;
+    padding-top: 4em;
 }
 
 .contact h2 {
@@ -282,7 +290,7 @@ header .wrapper {
 }
 
 .contact-form textarea {
-    height: 400px;
+    height: 200px;
     resize: none;
     align-content: flex-start;
     text-align: left !important;

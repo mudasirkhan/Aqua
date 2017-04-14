@@ -15,13 +15,15 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-.displayN{
+
+.displayN {
     opacity: 0 !important;
     transform: translateX(200px);
     width: 0px;
     -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
     transition: all 2s;
 }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -101,22 +103,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -190,29 +176,90 @@ textarea {
 .clearfix:after {
     clear: both;
 }
-.sub-menu{
+
+.sub-menu {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 1px 13px 1px rgba(0, 0, 0, .16);
+    padding: 1.5em 1.5em;
     position: absolute;
-    display: none;
-    padding: 0px;
+    left: 50%;
+    top: calc(100% + 25px);
+    display: flex;
+    opacity: 0;
+    -webkit-transition: all ease .35s;
+    transition: all ease .35s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 100px);
+    width: 640px;
+    transform: translateX(-50%);
 }
-.show-menu{
+
+ul.sub-menu:before {
+    content: "";
+    width: 0;
+    border: 8px white solid;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.sub-menu > li {
+    flex: 1 0 50%;
+    margin-bottom: 2em;
+}
+
+.sub-menu > li:last-child, .sub-menu > li:nth-child(3) {
+    margin-bottom: 0em;
+}
+
+.sub-menu li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-menu li a > img {
+    height: 60px;
+}
+
+.sub-menu li a p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #aaa;
+}
+
+.sub-menu li a h4 {
+    margin: 0;
+}
+
+.sub-menu li a div {
+    display: flex;
+    margin-left: 1em;
+    flex-direction: column;
+}
+
+.show-menu {
     position: relative;
 }
-.show-menu:hover .sub-menu{
-    display: block;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 1px 13px 1px rgba(0,0,0,.16);
 
-}
-.show-menu li a{
-color:#009ce1 !important;
 
+.show-menu li a {
+    color: #009ce1 !important;
+    text-decoration: none;
 }
-.show-menu li a:hover{
-    color:#7fc500 !important;
 
+.show-menu a:hover + .sub-menu {
+    opacity: 1;
+    top: calc(100% + 10px);
 }
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -224,9 +271,9 @@ color:#009ce1 !important;
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -243,8 +290,9 @@ color:#009ce1 !important;
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -266,7 +314,6 @@ color:#009ce1 !important;
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -282,7 +329,6 @@ color:#009ce1 !important;
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
