@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="277e9c80-1724-44d6-85f6-eb16bb6f9e00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ferris.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jssor.slider-23.1.0.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/index.css" afterPath="$PROJECT_DIR$/scss/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -457,12 +451,20 @@
       <workItem from="1492110924436" duration="5008000" />
       <workItem from="1492159595171" duration="2086000" />
       <workItem from="1492163750703" duration="670000" />
-      <workItem from="1492191130160" duration="5302000" />
+      <workItem from="1492191130160" duration="5327000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Submenu and other alignment fixes">
+      <created>1492198397981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492198397981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13066000" />
+    <option name="totallyTimeSpent" value="13091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -492,6 +494,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Submenu and other alignment fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Submenu and other alignment fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -559,6 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="1" column="3731" lean-forward="true" selection-start-line="1" selection-start-column="3731" selection-end-line="1" selection-end-column="3731" />
+          <folding />
         </state>
       </provider>
     </entry>
