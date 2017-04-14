@@ -67,6 +67,41 @@ header .wrapper {
     background: url("../img/pharma_bg.png") no-repeat;
     background-position-x: 80%;
     background-position-y: 15%;
+    transition: all 2s;
+    -webkit-transition:all 2s;
+}
+.img-wrapper0 {
+    background: url("../img/trade_bg.png") no-repeat;
+    background-position-x: 80%;
+    background-position-y: 15%;
+    transition: all 2s;
+    -webkit-transition:all 2s ;
+
+}
+
+.img-wrapper1 {
+    background: url("../img/fabrication_bg.png") no-repeat;
+    background-position-x: 80%;
+    background-position-y: 15%;
+    transition: all 2s;
+    -webkit-transition:all 2s ;
+
+}
+.img-wrapper2 {
+    background: url("../img/motor_bg.png") no-repeat;
+    background-position-x: 80%;
+    background-position-y: 15%;
+    transition: all 2s;
+    -webkit-transition:all 2s ;
+
+}
+.img-wrapper3 {
+    background: url("../img/pharma_bg.png") no-repeat;
+    background-position-x: 80%;
+    background-position-y: 15%;
+    transition: all 2s;
+    -webkit-transition:all 2s ;
+
 }
 
 .slider {
@@ -76,6 +111,7 @@ header .wrapper {
     align-items: center;
     min-height: 35vh;
 }
+
 
 .slider .slide {
     flex: .7;

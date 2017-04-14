@@ -53,7 +53,7 @@
 </script>
 
 <header>
-    <div class="img-wrapper">
+    <div class="img-wrapper" id="img-wrapper">
         <div class="wrapper">
 
             <div class="content">
@@ -276,7 +276,8 @@
             j=0;
         }
         ///setInterval(slider(),3000);
-
+        var imgBox=document.querySelector("#img-wrapper");
+        imgBox.setAttribute("class","img-wrapper"+j);
     }
 
 </script>
