@@ -15,10 +15,11 @@ header {
     background-size: 104%;
     background-position-x: -23px;
     padding-bottom: 1.5em;
+    background-repeat: no-repeat;
 }
 
 header .wrapper {
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 .wrapper {
@@ -64,7 +65,7 @@ header .wrapper {
 
 .img-wrapper {
     background: url("../img/pharma_bg.png") no-repeat;
-    background-position-x: 74%;
+    background-position-x: 80%;
     background-position-y: 15%;
 }
 
@@ -73,12 +74,20 @@ header .wrapper {
     flex: 1;
     justify-content: flex-start;
     align-items: center;
-    height: 35vh;
+    min-height: 35vh;
 }
 
 .slider .slide {
-    flex: .3;
-    margin-top: 4em;
+    flex: .7;
+    margin-top: 0em;
+    background-color: #009ce1;
+    border-radius: 4px ;
+    padding: 0em 1em;
+    /*transform: translateX(0);*/
+    -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
+    transition: all 2s;
+    opacity: 1;
+
 }
 
 .slider .slide p {
@@ -87,8 +96,8 @@ header .wrapper {
     margin-bottom: 0;
 }
 
-.slider .slide h3 {
-    font-size: 35px;
+.slider .slide h5 {
+    font-size: 18px;
     font-family: 'Lato-Bold';
     margin-bottom: .25em;
 }
