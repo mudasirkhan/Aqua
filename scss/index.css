@@ -384,4 +384,51 @@ header .wrapper {
     color: #e8544a;
 }
 
+@media (max-device-width: 769px ){
+    .services .items {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+.services{
+    display: block;
+}
+    .footer .footer-links {
+        display: block;
+    }
+    .sub-menu{
+        left: -25%;
+        padding: 0 !important;
+    }
+    wrapper{
+        width: 375px;
+    }
+    .contact-form{
+        width: 90% !important;
+    }
+    .contact-form select, .contact-form input, .contact-form textarea {
+    width: 90% !important;
+    }
+    .footer{
+        background:#f4fcff;
+        padding-top: 1em;
+        padding-left: 1em;
+        box-sizing: border-box;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .slider {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        height: 235px;
+        padding-top: 0em;
+        background-color: #009ce1;
+        width: 80%;
+    }
+    header .wrapper{
+        background-color: #009ce1;
+
+    }
+}
 /*# sourceMappingURL=index.css.map */
