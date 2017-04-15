@@ -115,20 +115,23 @@ header .wrapper {
 .slider {
     display: block;
     position: relative;
-    margin:2em 0 1.5em 0;
+    margin:0 0 1.5em 0;
+    height: 215px;
+    padding-top: 2em;
 }
 
 
 .slider .slide {
 
     margin-top: 0em;
-    left: 0;
+    opacity: 0;
+    position: absolute;
     border-radius: 4px ;
     padding: 0em 1em;
     /*transform: translateX(0);*/
     -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
     transition: all 2s;
-    opacity: 1;
+
 
 }
 
@@ -166,6 +169,7 @@ header .wrapper {
 .slider-dots-wrap {
     justify-content: space-around;
     margin-left: 2em;
+    margin-top: 2em;
     margin-bottom: .25em;
 }
 .slider-dots-wrap span {

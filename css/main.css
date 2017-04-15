@@ -18,12 +18,13 @@ html {
 
 .displayN {
     opacity: 0 !important;
-    transform: translateX(200px);
-    width: 0px;
     -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
     transition: all 2s;
 }
-
+.disp{
+    /*position: relative !important;*/
+    opacity: 1 !important;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -193,6 +194,7 @@ textarea {
     flex-wrap: wrap;
     max-width: calc(100vw - 100px);
     width: 640px;
+    z-index: -22;
     transform: translateX(-50%);
 }
 
@@ -258,6 +260,12 @@ ul.sub-menu:before {
 .show-menu a:hover + .sub-menu {
     opacity: 1;
     top: calc(100% + 10px);
+    z-index: 22;
+}
+.sub-menu:hover {
+    opacity: 1;
+    top: calc(100% + 10px);
+    z-index: 22;
 }
 
 /* ==========================================================================
