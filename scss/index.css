@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: #f4fcff;
     color: white;
@@ -62,6 +63,7 @@ header .wrapper {
     text-decoration: none;
     color: white;
 }
+
 .content .menu ul li:last-child a {
     padding-right: 0;
 }
@@ -76,14 +78,15 @@ header .wrapper {
     background-position-x: 80%;
     background-position-y: 10%;
     transition: all 2s;
-    -webkit-transition:all 2s;
+    -webkit-transition: all 2s;
 }
+
 .img-wrapper0 {
     background: url("../img/trade_bg.png") no-repeat;
     background-position-x: 80%;
     background-position-y: 15%;
     transition: all 2s;
-    -webkit-transition:all 2s ;
+    -webkit-transition: all 2s;
 
 }
 
@@ -92,45 +95,43 @@ header .wrapper {
     background-position-x: 80%;
     background-position-y: 15%;
     transition: all 2s;
-    -webkit-transition:all 2s ;
+    -webkit-transition: all 2s;
 
 }
+
 .img-wrapper2 {
     background: url("../img/motor_bg.png") no-repeat;
     background-position-x: 80%;
     background-position-y: 10%;
     transition: all 2s;
-    -webkit-transition:all 2s ;
+    -webkit-transition: all 2s;
 
 }
+
 .img-wrapper3 {
     background: url("../img/pharma_bg.png") no-repeat;
     background-position-x: 80%;
     background-position-y: 10%;
     transition: all 2s;
-    -webkit-transition:all 2s ;
+    -webkit-transition: all 2s;
 
 }
 
 .slider {
     display: block;
     position: relative;
-    margin:2em 0 1.5em 0;
+    margin: 2em 0 1.5em 0;
 }
 
-
 .slider .slide {
-
     margin-top: 0em;
     left: 0;
     opacity: 1;
     position: relative;
-    border-radius: 4px ;
-    padding: 0em 1em;
+    border-radius: 4px;
     /*transform: translateX(0);*/
     -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
     transition: all 2s;
-
 
 }
 
@@ -148,7 +149,7 @@ header .wrapper {
 }
 
 /*.slider .slide > * {*/
-    /*margin-top: 1rem;*/
+/*margin-top: 1rem;*/
 /*}*/
 
 .slider .slide .button {
@@ -165,24 +166,28 @@ header .wrapper {
 .slider .image {
     flex: .3;
 }
+
 .slider-dots-wrap {
     justify-content: space-around;
-    margin-left: 1.75em;
+    margin-left: 1em;
     margin-bottom: .25em;
 }
+
 .slider-dots-wrap span {
     width: 10px;
     height: 10px;
     margin-left: 11px;
     display: inline-block;
     vertical-align: top;
-    background-color: rgba(255,255,255,0.5);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border-radius: 5px;
 }
+
 .slider-dots-wrap span.active-dot {
     background-color: #fff;
 }
+
 .services-container {
     display: flex;
     flex: 1;
@@ -210,6 +215,7 @@ header .wrapper {
     flex: .2;
     margin: 0 0 .5em 0;
 }
+
 .services .items {
     width: 20%;
     text-align: center;
@@ -218,19 +224,21 @@ header .wrapper {
 .services .items h4 {
     padding: .3em 0;
     margin: 0 0 5px 0;
-    text-shadow: 0px 3px 6px rgba(0,0,0,0.10);
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);
     position: relative;
 }
+
 .services .items h4:after {
     content: "";
     width: 75px;
     height: 1px;
     position: absolute;
-    bottom:-3px;
+    bottom: -3px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255,255,255,0.30);
+    background: rgba(255, 255, 255, 0.30);
 }
+
 .services .items h4 + p {
     font-size: 12px;
 }
@@ -382,51 +390,139 @@ header .wrapper {
     color: #e8544a;
 }
 
-@media (max-device-width: 769px ){
+@media (max-device-width: 769px ) {
+    .menu > img {
+        width: 30px;
+    }
+    .menu {
+        position: relative;
+    }
+    .menu > ul {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        width: 100%;
+        max-width: 400px;
+        background: #fff;
+        padding: .5em .25em;
+        border-radius: 4px;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,0.15);
+        z-index: 9;
+    }
+    .menu > ul:before {
+        content: "";
+        width: 0;
+        border: 8px white solid;
+        position: absolute;
+        top: -16px;
+        right: 8px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+    #contact_form {
+        text-align: center;
+    }
+    .contact .select-arrow {
+        top: 1.05em;
+        right: 1.75em;
+    }
+    .content .menu > ul li a {
+        color: #777;
+        padding: .45em .75em;
+        display: block;
+    }
+    .content .menu > ul > li {
+        display: block;
+    }
+    .menu > img:hover + ul {
+        display: block;
+    }
+    .services-container {
+        border-radius: 0;
+        box-shadow: 0px -2px 12px 0px rgba(0,0,0,0.15);
+    }
     .services .items {
         width: 80%;
         margin: 0 auto;
         text-align: center;
     }
-.services{
-    display: block;
-}
+
+    .services {
+        display: block;
+    }
+
     .footer .footer-links {
         display: block;
     }
-    .sub-menu{
+
+    .sub-menu {
         left: -25%;
         padding: 0 !important;
     }
-    wrapper{
-        width: 375px;
+    header .wrapper .content {
+        width: 80%;
+        margin: 0 auto;
     }
-    .contact-form{
+    header .logo a{
+        color:white;
+        text-decoration: none;
+    }
+    header .logo img {
+        width: 125px
+    }
+
+    header .slider .slide {
+        padding: 0;
+    }
+    .slider-dots-wrap {
+        width: 80%;
+        margin: 1.25em auto 0;
+        text-align: left;
+        padding-left: .5em;
+    }
+    .slider-dots-wrap > span:first-child {
+        margin: 0;
+    }
+    .contact-form {
         width: 90% !important;
     }
+
     .contact-form select, .contact-form input, .contact-form textarea {
-    width: 90% !important;
+        width: 90% !important;
     }
-    .footer{
-        background:#f4fcff;
+
+    .footer {
+        background: #fff;
+        padding: 3em;
         padding-top: 1em;
-        padding-left: 1em;
-        box-sizing: border-box;
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
+    }
+    .footer .footer-links > div {
+        padding-bottom: 2em;
+        border-bottom: 1px solid #e1f2fc;
+    }
+    .footer .footer-links > div:last-child {
+        border: none;
+    }
+    .footer-link2 > ul {
+        margin-bottom: 0;
     }
     .slider {
         display: block;
         position: relative;
         margin: 0 auto;
-        height: 235px;
         padding-top: 0em;
         background-color: #009ce1;
         width: 80%;
     }
-    header .wrapper{
+
+    header .wrapper {
         background-color: #009ce1;
 
     }
 }
+
 /*# sourceMappingURL=index.css.map */
