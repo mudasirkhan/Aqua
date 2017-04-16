@@ -57,7 +57,7 @@
             <div class="content">
                 <div class="logo"><h2>Aqua</h2></div>
                 <nav class="menu">
-                    <img src="img/ham.svg" />
+                    <img src="img/ham.svg" class="ham" />
                     <ul>
                         <li class="show-menu"><a href="#"> Branches</a>
                             <ul class="sub-menu">
@@ -118,42 +118,71 @@
                             Learn more
                         </div>
                     </a>
-                </div>
-                <!--<div class="slide">-->
-                <!--<h5>-->
-                <!--Aqua Pharma-->
-                <!--</h5>-->
-                <!--<p>Having its office location at Karan Nagar,</br> Main Chowk, Sgr J&K</p>-->
-                <!--<a href="pharma.html">    <div class="button">-->
-                <!--Learn more-->
-                <!--</div></a>-->
-                <!--</div>-->
-                <!--<div class="slide">-->
-                <!--<h5>-->
-                <!--Aqua Motors-->
-                <!--</h5>-->
-                <!--<p>Having its office location at <br/>Madina Chowk Gow Kadal Srinagar.</p>-->
-                <!--<a href="motors.html">    <div class="button">-->
-                <!--Learn more-->
-                <!--</div></a>-->
-                <!--</div>-->
-                <!--<div class="slide">-->
-                <!--<h5>-->
-                <!--Aqua Engineers & Fabricators-->
-                <!--</h5>-->
-                <!--<p>Having its office & factory location at </br>-->
-                <!--Khunmoh  Indu- strial Area, Pulwama, J&K. </p>-->
-                <!--<a href="fabrications.html">    <div class="button">-->
-                <!--Learn more-->
-                <!--</div></a>-->
-                <!--</div>-->
-            </div>
+                    <div class="slider-dots-wrap">
+                        <span class="active-dot"></span>
+                        <span></span>
+                        <span></span>
+                        <span ></span>
+                    </div>
 
-            <div class="slider-dots-wrap">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="active-dot"></span>
+                </div>
+                <div class="slide">
+                    <h2>
+                        Aqua Pharma
+                    </h2>
+                    <p>Having its office location at Karan Nagar,</br> Main Chowk, Sgr J&K</p>
+                    <a href="pharma.html">
+                        <div class="button">
+                            Learn more
+                        </div>
+                    </a>
+                    <div class="slider-dots-wrap">
+                        <span></span>
+                        <span class="active-dot"></span>
+
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <h2>
+                        Aqua Motors
+                    </h2>
+                    <p>Having its office location at <br/>Madina Chowk Gow Kadal Srinagar.</p>
+                    <a href="motors.html">
+                        <div class="button">
+                            Learn more
+                        </div>
+                    </a>
+                    <div class="slider-dots-wrap">
+                        <span></span>
+                        <span></span>
+                        <span class="active-dot"></span>
+
+                        <span></span>
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <h2>
+                        Aqua Engineers & Fabricators
+                    </h2>
+                    <p>Having its office & factory location at </br>
+                        Khunmoh Indu- strial Area, Pulwama, J&K. </p>
+                    <a href="fabrications.html">
+                        <div class="button">
+                            Learn more
+                        </div>
+                    </a>
+                    <div class="slider-dots-wrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="active-dot"></span>
+                    </div>
+
+                </div>
             </div>
 
             <div class="main-content">
@@ -168,7 +197,6 @@
                                     Having its office location at Karan Nagar,
                                     Main Chowk, Sgr J&K
                                 </p>
-
                             </div>
                             <div class="items">
                                 <img src="img/engine.png" width="80" height="80"/>
@@ -196,7 +224,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -270,22 +297,32 @@
 
 <script>
     var j = 0;
-    function slider() {
-        var sld = document.querySelectorAll(".slide");
+    $(document).ready(function(){
+        var sld=document.querySelectorAll(".slide");
         console.log(j);
-
-        for (var i = 0; i < sld.length; i++) {
+        $(sld[j]).addClass("disp");
+    });
+    function slider() {
+        var sld=document.querySelectorAll(".slide");
+        console.log(j);
+        if(j===0)
+        {
+            $(sld[j]).addClass("disp");
+        }
+        for (var i=0;i<sld.length;i++)
+        {
             $(sld[i]).addClass("displayN");
-
+            $(sld[i]).removeClass("disp");
         }
-
-        $(sld[j++]).removeClass("displayN");
-        if (j === 4) {
-            j = 0;
+        $(sld[j]).removeClass("displayN");
+        $(sld[j++]).addClass("disp");
+        if(j===4)
+        {
+            j=0;
         }
-//        setInterval(slider(),1000);
-        var imgBox = document.querySelector("#img-wrapper");
-        imgBox.setAttribute("class", "img-wrapper" + j);
+///setInterval(slider(),3000);
+//var imgBox=document.querySelector("#img-wrapper");
+//imgBox.setAttribute("class","img-wrapper"+j);
     }
 
 </script>

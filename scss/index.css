@@ -15,7 +15,7 @@ header {
     background-image: url("../img/top-bg.png");
     background-size: 104%;
     background-position-x: -23px;
-    padding-bottom: 1.5em;
+    padding-bottom: 3em;
     background-repeat: no-repeat;
 }
 
@@ -121,13 +121,14 @@ header .wrapper {
     display: block;
     position: relative;
     margin: 2em 0 1.5em 0;
+    height: 200px;
 }
 
 .slider .slide {
     margin-top: 0em;
     left: 0;
-    opacity: 1;
-    position: relative;
+    opacity: 0;
+    position: absolute;
     border-radius: 4px;
     /*transform: translateX(0);*/
     -webkit-transition: all 2s; /* Safari 3.1 to 6.0 */
@@ -171,6 +172,7 @@ header .wrapper {
     justify-content: space-around;
     margin-left: 1em;
     margin-bottom: .25em;
+    margin-top: 1em;
 }
 
 .slider-dots-wrap span {
@@ -245,7 +247,7 @@ header .wrapper {
 
 .contact {
     background-color: #f4fcff;
-    padding-top: 2em;
+    padding-top: 0em;
 }
 
 .contact h2 {
@@ -389,10 +391,18 @@ header .wrapper {
 .foot-note span {
     color: #e8544a;
 }
-
+.ham{
+    opacity: 0;
+}
 @media (max-device-width: 769px ) {
+    header {
+        padding-bottom: 2em;
+    }
     .menu > img {
         width: 30px;
+    }
+    .ham{
+        opacity: 1;
     }
     .menu {
         position: relative;
@@ -478,7 +488,7 @@ header .wrapper {
     }
     .slider-dots-wrap {
         width: 80%;
-        margin: 1.25em auto 0;
+        margin: 1em 1.4em;
         text-align: left;
         padding-left: .5em;
     }
@@ -517,6 +527,7 @@ header .wrapper {
         padding-top: 0em;
         background-color: #009ce1;
         width: 80%;
+        height: 224px;
     }
 
     header .wrapper {
